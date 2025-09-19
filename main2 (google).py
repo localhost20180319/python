@@ -1,3 +1,5 @@
+##這邊說明下，次檔案練習到輸入後查詢要的部分(關卡2後續練習在main3 (google)檔案)
+
 from bs4 import BeautifulSoup
 import requests
 import json
@@ -29,7 +31,7 @@ DDD = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
 #for h in headings:
 #    print(h.text.strip())
 
-#網址相關變數
+#網址相關變數(關卡3把limit社成變數)
 parms={
     "action":"opensearch",
     "search":keyword,
@@ -38,7 +40,7 @@ parms={
 }
 
 
-# endpoint（不要在 url 字串裡加 ? 也沒關係，requests 會自動組 query string）
+# endpoint（不要在 url 字串裡加 也沒關係，requests 會自動組 query string）
 endpoint = "https://zh.wikipedia.org/w/api.php"
 
 # 正確呼叫：第一個參數是 URL，關鍵字參數要寫 params= 和 headers=
